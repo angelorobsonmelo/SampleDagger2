@@ -1,20 +1,16 @@
 package br.com.angelorobson.sampledagger2.modules.users.users
 
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import br.com.angelorobson.sampledagger2.model.User
 import br.com.angelorobson.sampledagger2.service.remote.user.UserApiDataSource
 import br.com.angelorobson.sampledagger2.utils.BaseViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import javax.inject.Inject
 
-class UsersViewModel(
+
+class UsersViewModel @Inject constructor(
     private val userApiDataSource: UserApiDataSource
-) : BaseViewModel<MutableList<User>>(), ViewModelProvider.Factory {
-
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        return UsersViewModel(userApiDataSource) as T
-    }
+) : BaseViewModel<MutableList<User>>() {
 
     init {
         getAll()
