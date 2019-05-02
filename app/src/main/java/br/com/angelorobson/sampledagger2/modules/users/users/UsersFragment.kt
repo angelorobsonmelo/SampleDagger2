@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.angelorobson.sampledagger2.R
 import br.com.angelorobson.sampledagger2.databinding.UsersFragmentBinding
 import br.com.angelorobson.sampledagger2.di.components.users.DaggerUsersComponent
-import br.com.angelorobson.sampledagger2.di.module.users.UserModule
 import br.com.angelorobson.sampledagger2.modules.users.users.adapter.UsersAdapter
 import javax.inject.Inject
 
