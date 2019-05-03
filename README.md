@@ -1,5 +1,5 @@
 
- ### Detalhes do exemplo
+ ### Project Details
  This App contains the following features:  
  * Kotlin
  * Androidx
