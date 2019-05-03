@@ -1,6 +1,6 @@
 
  ### Detalhes do exemplo
- Este App contém as seguintes características:  
+ This App contains the following features:  
  * Kotlin
  * Androidx
  * MVVM(Model-View-ViewModel) architecture
